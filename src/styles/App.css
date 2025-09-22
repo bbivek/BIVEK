@@ -1,0 +1,561 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e2e8f0;
+  z-index: 1000;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-items button {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.nav-items button:hover,
+.nav-items button.active {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+/* Main Content */
+.main-content {
+  padding-top: 4rem;
+}
+
+.section-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+  color: #1e293b;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  margin: 0 auto 3rem;
+}
+
+.profile-picture {
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+   */
+   text-align: right;
+   max-width: 60%;
+}
+
+.hero-text .main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-text .subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+/* About Section */
+.about-section {
+  max-width: 700px;      /* overall section width */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.about-section .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-section .description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;  
+  text-align-last: left;
+}
+
+
+/* Education Section */
+.education-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-item {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.education-item p {
+  margin: 0.25rem 0;
+  color: #374151;
+}
+
+.education-item p:first-of-type {
+  font-weight: 500;
+}
+
+.education-item p:nth-of-type(2) {
+  color: #64748b;
+}
+
+/* Research Section */
+.research-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.research-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.research-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.research-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.research-description {
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Experience Section */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  transition: box-shadow 0.2s;
+}
+
+.experience-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.experience-company {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.experience-date {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.experience-list {
+  color: #374151;
+  padding-left: 1rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Publications Section */
+.publications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.publication-item {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.publication-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-type {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+
+.publication-type.oral {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.publication-type.paper {
+  color: #166534;
+}
+
+.publication-date {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.publication-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.publication-venue {
+  color: #2563eb;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.publication-location {
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.publication-doi {
+  color: #64748b;
+} 
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #f8fafc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.skill-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.skill-list {
+  color: #374151;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+/* Awards Section */
+.awards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.award-item {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.award-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.award-subtitle {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.award-description {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  /* margin-top: 5px; */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text .main-title {
+    font-size: 2rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-picture {
+    width: 200px;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+}
+
+
+
+.experience-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.experience-images img {
+  /* width: 364px;
+  height: 213px; */
+  border-radius: 5px;
+  /* object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); */
+  max-width: 100%;
+  /* border-radius: 10px; */
+  margin: 5px;
+   border: 3px solid #4cafef;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific for Research Assistant */
+.assistant-images img {
+  width: 350px;
+  height: 245px;
+ 
+}
+
+/* Specific for Research Intern */
+.intern-images img {
+  width: 240px;
+  height: auto;
+
+  padding: 4px;
+  /* background: #fffbe6; */
+}
+
+.consultant-images img {
+
+  width: 350px;
+  height: 240px;
+}
+
+.technical-images img {
+  
+  width: 350px;
+  height: 220px;
+}
+
+/* Container for images inside outreach events */
+.publication-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Individual images */
+.publication-images img {
+  width: 32rem;         
+  height: auto;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+ 
+}
+
+
+
+.contact-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+}
+
+.contact-icons a {
+  color: #333;
+  transition: color 0.3s;
+  font-size: 22px;
+}
+
+.contact-icons a:hover {
+  color: #0077b5;
+}
+
+
+/* .hero-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* keeps images responsive */
+
+
+/* .profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+
+
+  /* .second-picture{
+    height: 500px;
+    width: 400px;
+  }
+
+  .first-picture
+  {
+    height: 500px;
+  } */

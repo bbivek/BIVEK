@@ -2,7 +2,7 @@
   "name": "bivek",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://bbivek.github.io/portfolio",
+  "homepage": "https://bbivek.github.io/Bivek",
   "type": "module",
   "scripts": {
     "dev": "vite",

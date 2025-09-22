@@ -7,5 +7,5 @@ export default defineConfig({
     tailwindcss(),
       
   ],
-  base: '/bivek/',
+  base: '/BIVEK/',
 })

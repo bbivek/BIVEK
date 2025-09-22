@@ -50,7 +50,7 @@ const Home = () => {
 
         {/* Second Image */}
         <motion.img
-          src="/bivek/IMG_0681.jpeg"
+          src="/BIVEK/images/IMG_0681.jpeg"
           alt="Profile 2"
           className="profile-picture second-picture"
           initial={{ opacity: 0, scale: 0.8 }}

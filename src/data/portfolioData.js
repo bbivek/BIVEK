@@ -64,6 +64,6 @@ export const outreach = [
       // ],
     
     ],
-    images: ["/bivek/ex1.JPG"],
+    images: ["/BIVEK/images/ex1.JPG"],
   },
 ];
